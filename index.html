@@ -15,9 +15,16 @@
             if (valor1 === valor2 && valor2 === valor3) {
                 alert("¡Triángulo equilatero!");
 				}
-			else if (valor1 === valor2 || valor2 === valor3) {
+			else if (valor1 === valor2) {
                 alert("¡Triángulo isoseles!");	
-            } else {
+            }
+			else if (valor1 === valor3) {
+                alert("¡Triángulo isoseles!");	
+            }
+			else if (valor2 === valor3) {
+                alert("¡Triángulo isoseles!");	
+            }
+			else {
                 alert("Triángulo escaleno .");
             }
         }
