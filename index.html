@@ -13,11 +13,18 @@
 
             // Comparar si los tres valores son iguales
             if (valor1 === valor2 && valor2 === valor3) {
-                alert("¡Triangulo equilatero!");
+                alert("¡Triángulo equilatero!");
+				}
+			else if (valor1 === valor2 || valor2 === valor3) {
+                alert("¡Triángulo isoseles!");	
             } else {
-                alert("Triangulo isoseles o escaleno .");
+                alert("Triángulo escaleno .");
             }
         }
+		
+		
+		
+		
     </script>
 </head>
 <body>
@@ -32,6 +39,9 @@
 
         <label for="valor3">Valor 3:</label>
         <input type="text" id="valor3" name="valor3"><br><br>
+		
+	
+
 
         <button type="button" onclick="compararValores()">Validar</button>
 		
